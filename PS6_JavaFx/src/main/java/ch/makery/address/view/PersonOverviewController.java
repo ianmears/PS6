@@ -134,9 +134,10 @@ public class PersonOverviewController {
     /**
      * Called when the user clicks the new button. Opens a dialog to edit
      * details for a new person.
+     * @throws Exception 
      */
     @FXML
-    private void handleNewPerson() {
+    private void handleNewPerson() throws Exception {
         Person tempPerson = new Person();
         boolean okClicked = mainApp.showPersonEditDialog(tempPerson);
         if (okClicked) {
@@ -149,9 +150,10 @@ public class PersonOverviewController {
     /**
      * Called when the user clicks the edit button. Opens a dialog to edit
      * details for the selected person.
+     * @throws Exception 
      */
     @FXML
-    private void handleEditPerson() {
+    private void handleEditPerson() throws Exception {
         Person selectedPerson = personTable.getSelectionModel().getSelectedItem();
         if (selectedPerson != null) {
             boolean okClicked = mainApp.showPersonEditDialog(selectedPerson);

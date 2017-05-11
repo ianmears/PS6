@@ -20,7 +20,7 @@ import domain.PersonDomainModel;
 public class Person extends PersonDomainModel {
 
 	public Person() {
-		this(null, null, null, (Integer) null, null, null);
+		this("", "", "", new Integer(0) , "", "2000-01-01");
 	}
 
 	public Person(String firstName, String lastName, String street, int postalCode, String city, Object birthday) {
